@@ -3,6 +3,7 @@
 class App{
 
     public $routes = array();
+    public $method = strtoupper($_SERVER['REQUEST_METHOD']);
 
     public function route($name,$function){
         $this->routes[$name] = $function;

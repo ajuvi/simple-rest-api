@@ -2,6 +2,7 @@
 
 class DefaultModel{
     $tablename="";
+    $primaryKey="id";
     $fields = array();
 
     public function convertToJson(){
@@ -9,7 +10,7 @@ class DefaultModel{
     }
 
     public function loadFromJson(){
-        
+
     }
 
 }
