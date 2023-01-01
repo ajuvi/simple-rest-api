@@ -22,6 +22,26 @@ class App{
         $this->metode = strtoupper($_SERVER['REQUEST_METHOD']);
     }
 
+    public function get($name,$function){
+        if($this->metode=='GET')
+            $this->route($name,$function);
+    }
+
+    public function post($name,$function){
+        if($this->metode=='POST')
+            $this->route($name,$function);
+    }
+
+    public function put($name,$function){
+        if($this->metode=='PUT')
+            $this->route($name,$function);
+    }
+
+    public function delete($name,$function){
+        if($this->metode=='DELETE')
+            $this->route($name,$function);
+    }
+
     public function route($name,$function){
         $this->routes[$name] = $function;
     }
