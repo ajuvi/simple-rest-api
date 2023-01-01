@@ -1,1 +1,1 @@
-# php-rest
+# simple-rest-get
