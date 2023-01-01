@@ -1,14 +1,17 @@
 [
 { 
     "id":"1",
-    "name":"Tintin"
+    "nom":"Tintín",
+    "imatge":"https://upload.wikimedia.org/wikipedia/ca/a/ac/Tint%C3%ADn_i_Mil%C3%BA.png"
 },
 { 
     "id":"2",
-    "name":"Capità Haddock"
+    "nom":"Capità Haddock",
+    "imatge":"https://upload.wikimedia.org/wikipedia/ca/3/3a/Captain_Haddock.png"
 },
 { 
     "id":"3",
-    "name":"Milú"
+    "nom":"Milú",
+    "imatge":"https://upload.wikimedia.org/wikipedia/ca/c/c4/Mil%C3%BA.jpg"    
 }
 ]
