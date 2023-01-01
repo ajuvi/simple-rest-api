@@ -5,31 +5,31 @@ require_once "core/App.php";
 
 $app = new App();
 
-$app->route('/', function(){
+$app->get('/', function(){
     echo json_encode(array("version"=>"simple-rest-api version 0.1"));
 });
 
-$app->route('/hola', function(){
+$app->get('/hola', function(){
     $missatge="hola a tothom";
     echo $missatge;
 });
 
-$app->route('/hola/{nom}', function(){
+$app->get('/hola/{nom}', function(){
     $nom=App::param('nom');
     echo "hola $nom";
 });
 
-$app->route('/tintin', function() use ($app){
+$app->get('/tintin', function() use ($app){
     $pm = new TintinModel();
     $app->response_json($pm->all());
 });
 
-$app->route('/tintin/count', function() use ($app){
+$app->get('/tintin/count', function() use ($app){
     $pm = new TintinModel();
     $app->response_json($pm->count());
 });
 
-$app->route('/tintin/{id}', function() use ($app){
+$app->get('/tintin/{id}', function() use ($app){
     $id=App::param('id');
     $pm = new TintinModel();
     $app->response_json($pm->index($id));
